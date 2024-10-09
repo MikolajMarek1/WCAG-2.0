@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+}
+
+main {
+    flex: 1;
+    margin-right: 20px;
+}
+
+aside {
+    width: 250px;
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    color: #ff6600;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    background-color: #0056b3;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+a:focus, button:focus {
+    outline: 2px solid #ffcc00;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+nav {
+    background-color: #003366;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.mini {
+    font-size: 0.7rem;
+}
